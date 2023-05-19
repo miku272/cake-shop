@@ -12,13 +12,11 @@ class ResponsiveLoginScreen extends StatelessWidget {
     return Scaffold(
       body: LayoutBuilder(
         builder: (context, constraints) {
-          if (constraints.maxWidth < 800) {
+          if (constraints.maxWidth < 600) {
             return const LoginMobile();
-          }
-          // else if (constraints.maxWidth > 600 && constraints.maxWidth < 900) {
-          //   return const LoginTablet();
-          // }
-          else {
+          } else if (constraints.maxWidth > 600 && constraints.maxWidth < 900) {
+            return const LoginTablet();
+          } else {
             return const LoginDesktop();
           }
         },
