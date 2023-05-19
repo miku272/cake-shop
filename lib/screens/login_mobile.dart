@@ -27,14 +27,11 @@ class _LoginMobileState extends State<LoginMobile> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
-                  Tooltip(
-                    message: 'Photo by American Heritage Chocolate on Unsplash',
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(15.0),
-                      child: Image.asset(
-                        'images/mobile_example_pic.jpg',
-                        fit: BoxFit.cover,
-                      ),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(15.0),
+                    child: Image.asset(
+                      'images/mobile_example_pic_png.png',
+                      fit: BoxFit.cover,
                     ),
                   ),
                   const SizedBox(height: 20.0),
